@@ -19,11 +19,7 @@ export function About(props: Props) {
           <h1>About</h1>
           <p>
             {" "}
-            I am a proactive person in every way, my strongest objective is to grow in the field in which I develop,
-            generate a good group and contribute my full knowledge to the company. Always eager to learn day by day and
-            obtaining optimal results. I like to work as a team, I am interested that we all form part of the same goal
-            and get to have the satisfaction of a challenge that has been overcome. I consider myself effective in each
-            task to be carried out, decisive, practical and fast.
+            I am a proactive individual, eager to contribute my knowledge and skills to a company while also continuing to learn and grow within my field. I am a strong team player, striving to work towards common goals and overcome challenges together. My approach to tasks is practical, decisive and efficient, ensuring optimal results.
           </p>
         </Content>
       </section>

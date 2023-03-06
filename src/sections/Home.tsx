@@ -48,8 +48,7 @@ export const Home: FC<Props> = ({ homeRef }) => {
         <div className="info">
           <h1>Jona Garcia</h1>
           <p>
-            I'm a front-end developer from the city of joy Buenos Aires, Argentina. It motivates me to use my
-            imagination to create unique designs in each project and thus develop my skills to the fullest.
+          I'm a front-end developer from the city of Buenos Aires, Argentina. It motivates me to use my creativity to design unique projects and thus develop my skills to their fullest potential.
           </p>
           <AnchorLink offset="70" href="#work">
             <DownArrow /> View My Work
