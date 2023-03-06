@@ -11,7 +11,8 @@
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.4",
     "react-spring": "^8.0.27",
-    "ts-debounce": "^2.0.1"
+    "ts-debounce": "^2.0.1",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/node": "^12.12.62",

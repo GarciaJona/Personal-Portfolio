@@ -1,1 +1,1 @@
-Jona Garcias portfolio website.
+Jona Garcia's portfolio website.
