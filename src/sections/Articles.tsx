@@ -15,7 +15,7 @@ export const Articles: FC<Props> = ({ isMobile, articleRef }) => {
     <section id="articles" ref={articleRef}>
       <Content>
         {isMobile ? <></> : <AboutShapes />}
-        <h1>Blogs</h1>
+        <h1>Blogs  of interest</h1>
         <ArticleWrapper>
           <ArticleCard
             description={
