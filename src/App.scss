@@ -1,0 +1,250 @@
+@import "./assets/variables";
+
+div.content {
+  @include width;
+  margin: auto;
+  max-width: 1920px;
+}
+
+.scroll-progress {
+  height: 2px;
+  background-color: $primary;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: ease-in-out 25ms;
+}
+
+.hidden-text {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #ffffff15;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 300;
+  @include ease-in-out(200ms);
+  &.mobile {
+    ul.container {
+      li.right {
+        ul {
+          li {
+            &.logo {
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.mobile-full {
+    z-index: 301;
+    @include ease-in-out(200ms);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    ul {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+        cursor: pointer;
+        &.icon {
+          width: 60px;
+          fill: $primary;
+          margin-bottom: 30px;
+          filter:drop-shadow(1px 2px 5px #000);
+        }
+        a {
+          display: inline-block;
+          padding: 14px 16px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bold;
+          font-size: 25px;
+          cursor: pointer;
+          text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(0, 0, 0, 0.3),
+          2px 2px 3px rgba(0, 0, 0, 0);
+          &.active {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  ul.container {
+    max-width: 1920px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 10px 0;
+    @include ease-in-out(200ms);
+    @media (max-width: $medium) {
+      width: 85%;
+    }
+    @media (max-width: $small) {
+      width: 90%;
+    }
+    li {
+      display: inline-block;
+      &.right {
+        .logo {
+          padding: 2px 0 0 2px;
+        }
+      }
+      ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        li {
+          display: inline-block;
+          position: relative;
+          &.logo {
+            filter:drop-shadow(1px 2px 5px #000);
+            cursor: pointer;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -3px;
+              left: 0%;
+              width: 0%;
+              height: 3px;
+              background-color: $primary;
+              @include ease-in-out(200ms);
+            }
+            &:hover::after {
+              width: 84%;
+            }
+            &:first-child {
+              a {
+                padding: 16px 10px 16px 0;
+                color: $primary;
+              }
+            }
+            svg {
+              fill: $primary;
+              height: 35px;
+            }
+          }
+          &.divider {
+            padding: 0 7.5px;
+            @media (max-width: $medium) {
+              padding: 0 7.5px 0 0;
+            }
+            div {
+              display: block;
+              width: 2px;
+              height: 45px;
+              background-color: $light;
+            }
+          }
+          &.icon {
+            padding: 0 3px;
+            filter:drop-shadow(1px 1px 5px #000);
+            a {
+              padding: 18px 21px;
+              @media (max-width: $medium) {
+                padding: 16px 16px;
+              }
+              &:hover {
+                .main {
+                  svg {
+                    opacity: 0;
+                    transform: translateX(-15px) scale(0.5);
+                    fill: $primary;
+                  }
+                }
+                .sub {
+                  svg {
+                    opacity: 1;
+                    transform: translateX(0px) scale(1);
+                    polyline {
+                      transform: translate(2px, -2px);
+                      fill: $primary;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          a {
+            text-decoration: none;
+            padding: 16px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            color: #fff;
+            text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(0, 0, 0, 0.3),
+              2px 2px 3px rgba(0, 0, 0, 0);
+            @include ease-in-out(200ms);
+            &.active {
+              color: $primary;
+            }
+            &.anchor {
+              position: relative;
+              @include hover-bar(7px, 90%);
+            }
+            .main {
+              position: absolute;
+              top: -3px;
+              left: 50%;
+              transform: translate(-50%);
+              svg {
+                fill: white ;
+                height: 30px;
+                @include ease-in-out(150ms);
+              }
+            }
+            .sub {
+              position: absolute;
+              top: -3px;
+              left: 50%;
+              transform: translate(-50%);
+              svg {
+                overflow: visible;
+                fill: $primary;
+                height: 30px;
+                opacity: 0;
+                transform: translateX(15px) scale(0.5);
+                @include ease-in-out(150ms);
+                polyline {
+                  @include ease-in-out(150ms);
+                  transition-delay: 25ms;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

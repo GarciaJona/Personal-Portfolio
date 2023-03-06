@@ -1,0 +1,68 @@
+@import "./assets/variables";
+
+body {
+  margin: 0;
+  font-family: "Neutra", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #001a52;
+  overflow-y: scroll;
+  color:#fff;
+
+  @media (min-width: $medium) {
+    font-size: 22px;
+  }
+  @media (max-width: $medium) {
+    font-size: 18px;
+  }
+  @media (max-width: $small) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 1300px) and (max-height: 1080px) {
+    font-size: 16px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, "Courier New", monospace;
+  
+}
+
+@font-face {
+  font-family: Neutra;
+  font-weight: bold;
+  src: url(./assets/fonts/NeutraTextBold.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Neutra;
+  font-weight: normal;
+  src: url(./assets/fonts/NeutraTextBook.otf);
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  &-track {
+    background: #112061;
+  }
+  &-thumb {
+    background: $light-gray-3;
+    border-radius: 2px;
+    &:hover {
+      background: $primary;
+    }
+  }
+}
+
+::selection {
+  background-color: $primary;
+}
