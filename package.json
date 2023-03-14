@@ -29,7 +29,6 @@
     "eject": "react-scripts eject",
     "format": "yarn prettier --write ./src/**/*.{js,jsx,json,md,ts,tsx}",
     "format:check": "yarn prettier ./src/**/*.{js,jsx,json,md,ts,tsx}"
-  
   },
   "eslintConfig": {
     "extends": "react-app"
