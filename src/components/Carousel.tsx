@@ -63,7 +63,7 @@ const Carousel: FC<Props> = (props: Props) => {
 
   useEffect(() => {
     if (!isModalOpen) {
-      setImageList([0, 1, 2, 3, 4]);
+      setImageList([ 0, 1, 2, 3, 4]);
     }
   }, [isModalOpen]);
 
