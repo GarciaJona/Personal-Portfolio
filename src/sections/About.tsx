@@ -16,7 +16,7 @@ export function About(props: Props) {
       <section id="about" ref={aboutRef}>
         <Content>
           {isMobile ? null : <AboutShapes />}
-          <h1>About</h1>
+          <h1>About Me</h1>
           <p>
             {" "}
             I am a proactive individual, eager to contribute my knowledge and skills to a company while also continuing to learn and grow within my field. I am a strong team player, striving to work towards common goals and overcome challenges together. My approach to tasks is practical, decisive and efficient, ensuring optimal results.
