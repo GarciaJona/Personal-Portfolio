@@ -129,6 +129,18 @@ import Medbot8Thumb from "../assets/images/medbot/Screenshot_8-thumb.png"
 import Medbot9Thumb from "../assets/images/medbot/Screenshot_9-thumb.png"
 import Medbot10Thumb from "../assets/images/medbot/Screenshot_10-thumb.png"
 
+//Karku
+import Karku1 from "../assets/images/karku/Screenshot_1.png";
+import Karku2 from "../assets/images/karku/Screenshot_2.png";
+import Karku3 from "../assets/images/karku/Screenshot_3.png";
+import Karku4 from "../assets/images/karku/Screenshot_4.png";
+import Karku5 from "../assets/images/karku/Screenshot_5.png";
+import Karku1Thumb from "../assets/images/karku/Screenshot_1-thumb.png";
+import Karku2Thumb from "../assets/images/karku/Screenshot_2-thumb.png";
+import Karku3Thumb from "../assets/images/karku/Screenshot_3-thumb.png";
+import Karku4Thumb from "../assets/images/karku/Screenshot_4-thumb.png";
+import Karku5Thumb from "../assets/images/karku/Screenshot_5-thumb.png";
+
 //Articles
 import Blog2 from "../assets/images/articles/blog2.png"
 import Blog3 from "../assets/images/articles/blog3.png"
@@ -152,6 +164,7 @@ export const images: {
   mdcx: Image[];
   mdcxcampaign: Image[];
   medbot: Image[];
+  karku: Image[];
   articles: {
     blog2: Image;
     blog3: Image;
@@ -587,6 +600,43 @@ export const images: {
       thumb: Medbot10Thumb,
       src: Medbot10,
       alt: "Mdcx Screenshot #10",
+    },
+  ],
+  karku:[
+    {
+      width: 2559,
+      height: 1326,
+      thumb: Karku1Thumb,
+      src: Karku1,
+      alt: "Karku Screenshot #1",
+    },
+    {
+      width: 2559,
+      height: 1326,
+      thumb: Karku2Thumb,
+      src: Karku2,
+      alt: "Karku Screenshot #2",
+    },
+    {
+      width: 2559,
+      height: 1326,
+      thumb: Karku3Thumb,
+      src: Karku3,
+      alt: "Karku Screenshot #3",
+    },
+    {
+      width: 2559,
+      height: 1326,
+      thumb: Karku4Thumb,
+      src: Karku4,
+      alt: "Karku Screenshot #4",
+    },
+    {
+      width: 2559,
+      height: 1326,
+      thumb: Karku5Thumb,
+      src: Karku5,
+      alt: "Karku Screenshot #5",
     },
   ],
   articles: {

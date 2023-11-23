@@ -167,7 +167,13 @@ export const HeroShapes = React.forwardRef((props: any, ref: any) => {
           transform: parallax.xy.interpolate(trans5),
         }}
       >
-        <Img className="hero-image" src={JGHero} alt="Jona Garcia" lazy={true} />
+        <Img
+          className="hero-image"
+          src={JGHero}
+          alt="Jona Garcia"
+          lazy={true}
+          style={{ width: "300px", heigth: "300px" }}
+        />
       </animated.div>
 
       <div className="hero-shapes-wrapper">

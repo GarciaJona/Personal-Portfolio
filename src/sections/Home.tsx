@@ -46,6 +46,9 @@ export const Home: FC<Props> = ({ homeRef }) => {
     >
       <Content>
         <div className="info">
+        <div className="hero">
+          <HeroShapes parallax={parallax} ref={parallaxRef} />
+        </div>
           <h1>Jona Garcia</h1>
           <p>
           I'm a front-end developer from the city of Buenos Aires, Argentina. It motivates me to use my creativity to design unique projects and thus develop my skills to their fullest potential.
@@ -53,9 +56,6 @@ export const Home: FC<Props> = ({ homeRef }) => {
           <AnchorLink offset="70" href="#work">
             <DownArrow /> View My Work
           </AnchorLink>
-        </div>
-        <div className="hero">
-          <HeroShapes parallax={parallax} ref={parallaxRef} />
         </div>
       </Content>
     </section>
