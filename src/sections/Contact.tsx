@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import { AboutShapes, DownloadIcon, EmailIcon, LinkedIn } from "../assets/svg";
 import ContactOption from "../components/ContactOption";
 import ContactOptionsWrapper from "../components/ContactOptionsWrapper";
@@ -130,30 +131,3 @@ export const Contact = ({ isMobile, contactRef }) => {
     </section>
   );
 };
-
-// onSubmit={(e: FormEvent<HTMLFormElement>) => {
-//   e.preventDefault();
-
-//   let formData = {
-//     fullname: fullname,
-//     email: email,
-//     message: message,
-//   };
-
-//   fetch("/form", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/x-www-form-urlencoded",
-//     },
-//     body: encode({ "form-name": "contact", ...formData }),
-//   })
-//   .then(() => {
-//     alert("Message Received!");
-//     setEmail("");
-//     setFullname("");
-//     setMessage("");
-//   })
-//   .catch((error) => alert(error));
-
-//   e.preventDefault();
-// }}
